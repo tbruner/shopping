@@ -5,15 +5,47 @@ import Shop from './Shop';
 import '../styles/App.css';
 
 function App() {
+  const mens = {
+    title: 'Mens',
+    items: [
+      {
+        shoeBrand: 'Nice',
+        shoeName: 'Zoom',
+        cost: 49.99
+      }
+    ]
+  }
+
+  const womens = {
+    title: 'Womens',
+    items: [
+      {
+        shoeBrand: 'Nice',
+        shoeName: 'Zooma',
+        cost: 49.99
+      }
+    ]
+  }
+
+  const kids = {
+    title: 'Kids',
+    items: [
+      {
+        shoeBrand: 'Nice',
+        shoeName: 'Zoomy',
+        cost: 19.99
+      }
+    ]
+  }
   return (
     <>
       <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/mens' element={<Shop />} />
-          <Route path='/womens' element={<Shop />} />
-          <Route path='/kids' element={<Shop />} />
+          <Route path='/mens' element={<Shop department={mens} />} />
+          <Route path='/womens' element={<Shop department={womens} />} />
+          <Route path='/kids' element={<Shop department={kids} />} />
         </Routes>
       </BrowserRouter>
     </>
