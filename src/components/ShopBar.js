@@ -1,10 +1,10 @@
 import '../styles/ShopBar.css';
 
-const ShopBar = () => {
+const ShopBar = ({ itemCount, saleTotal }) => {
   return (
     <div className='sticky'>
-      <span className='item-count'>Count: </span>
-      <span className='total-cost'>Total: </span>
+      <span className='item-count'>Count: {itemCount}</span>
+      <span className='total-cost'>Total: {saleTotal}</span>
       <button className='checkout-btn'>Checkout</button>
     </div>
   );
