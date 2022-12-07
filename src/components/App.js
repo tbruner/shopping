@@ -19,7 +19,8 @@ function App() {
         cost: 49.99,
         image: shoe,
         alt: 'image of a shoe',
-        id: 101
+        id: 101,
+        sizes: [8, 8.5, 9, 9.5, 10, 11, 12, 13]
       }
     ]
   }
@@ -33,7 +34,8 @@ function App() {
         cost: 49.99,
         image: shoe,
         alt: 'image of a shoe',
-        id: 102
+        id: 102,
+        sizes: [6, 6.5, 7, 7.5, 8, 9, 10]
       }
     ]
   }
@@ -47,7 +49,8 @@ function App() {
         cost: 19.99,
         image: shoe,
         alt: 'image of a shoe',
-        id: 201
+        id: 201,
+        sizes: [4, 5, 6, 7]
       }
     ]
   }
