@@ -18,7 +18,8 @@ function App() {
         shoeName: 'Zoom',
         cost: 49.99,
         image: shoe,
-        alt: 'image of a shoe'
+        alt: 'image of a shoe',
+        id: 101
       }
     ]
   }
@@ -31,7 +32,8 @@ function App() {
         shoeName: 'Zooma',
         cost: 49.99,
         image: shoe,
-        alt: 'image of a shoe'
+        alt: 'image of a shoe',
+        id: 102
       }
     ]
   }
@@ -44,7 +46,8 @@ function App() {
         shoeName: 'Zoomy',
         cost: 19.99,
         image: shoe,
-        alt: 'image of a shoe'
+        alt: 'image of a shoe',
+        id: 201
       }
     ]
   }
