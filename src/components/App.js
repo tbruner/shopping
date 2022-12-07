@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import Home from './Home';
 import Shop from './Shop';
 import '../styles/App.css';
+import shoe from '../images/shoe.jpg';
 
 function App() {
   const [itemCount, setItemCount] = useState(0);
@@ -15,7 +16,9 @@ function App() {
       {
         shoeBrand: 'Nice',
         shoeName: 'Zoom',
-        cost: 49.99
+        cost: 49.99,
+        image: shoe,
+        alt: 'image of a shoe'
       }
     ]
   }
@@ -26,7 +29,9 @@ function App() {
       {
         shoeBrand: 'Nice',
         shoeName: 'Zooma',
-        cost: 49.99
+        cost: 49.99,
+        image: shoe,
+        alt: 'image of a shoe'
       }
     ]
   }
@@ -37,7 +42,9 @@ function App() {
       {
         shoeBrand: 'Nice',
         shoeName: 'Zoomy',
-        cost: 19.99
+        cost: 19.99,
+        image: shoe,
+        alt: 'image of a shoe'
       }
     ]
   }
