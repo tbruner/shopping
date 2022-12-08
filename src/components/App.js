@@ -7,8 +7,10 @@ import '../styles/App.css';
 import shoe from '../images/shoe.jpg';
 
 function App() {
-  const [itemCount, setItemCount] = useState(0);
-  const [saleTotal, setSaleTotal] = useState(0);
+  const [cart, setCart] = useState({
+    total: 0,
+    count: 0
+  });
 
   const mens = {
     title: 'Mens',
@@ -23,7 +25,7 @@ function App() {
         sizes: [8, 8.5, 9, 9.5, 10, 11, 12, 13]
       }
     ]
-  }
+  };
 
   const womens = {
     title: 'Womens',
@@ -38,7 +40,7 @@ function App() {
         sizes: [6, 6.5, 7, 7.5, 8, 9, 10]
       }
     ]
-  }
+  };
 
   const kids = {
     title: 'Kids',
@@ -53,16 +55,16 @@ function App() {
         sizes: [4, 5, 6, 7]
       }
     ]
-  }
+  };
   return (
     <>
       <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/mens' element={<Shop department={mens} itemCount={itemCount} saleTotal={saleTotal} />} />
-          <Route path='/womens' element={<Shop department={womens} itemCount={itemCount} saleTotal={saleTotal} />} />
-          <Route path='/kids' element={<Shop department={kids} itemCount={itemCount} saleTotal={saleTotal} />} />
+          <Route path='/mens' element={<Shop department={mens} cart={cart} />} />
+          <Route path='/womens' element={<Shop department={womens} cart={cart} />} />
+          <Route path='/kids' element={<Shop department={kids} cart={cart} />} />
         </Routes>
       </BrowserRouter>
     </>
