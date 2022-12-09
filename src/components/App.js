@@ -9,7 +9,8 @@ import shoe from '../images/shoe.jpg';
 function App() {
   const [cart, setCart] = useState({
     total: 0,
-    count: 0
+    count: 0,
+    items: []
   });
 
   const mens = {
@@ -56,15 +57,58 @@ function App() {
       }
     ]
   };
+
+  const addToCart = (id) => {
+    let newItems = cart.items;
+    let found = false;
+    let newCount = cart.count + 1;
+    let newTotal = cart.total;
+
+    for(const item of mens.items) {
+      if(found) break;
+      if(item.id === id) {
+        newItems.push(item);
+        newTotal += item.cost;
+        found = true;
+      }
+    }
+
+    for(const item of womens.items) {
+      if(found) break;
+      if(item.id === id) {
+        newItems.push(item);
+        newTotal += item.cost;
+        found = true;
+      }
+    }
+
+    for(const item of kids.items) {
+      if(found) break;
+      if(item.id === id) {
+        newItems.push(item);
+        newTotal += item.cost;
+        found = true;
+      }
+    }
+
+    setCart(
+      {
+        total: newTotal,
+        count: newCount,
+        items: newItems
+      }
+    );
+  } 
+
   return (
     <>
       <BrowserRouter>
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/mens' element={<Shop department={mens} cart={cart} />} />
-          <Route path='/womens' element={<Shop department={womens} cart={cart} />} />
-          <Route path='/kids' element={<Shop department={kids} cart={cart} />} />
+          <Route path='/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} />
+          <Route path='/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} />} />
+          <Route path='/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} />} />
         </Routes>
       </BrowserRouter>
     </>
