@@ -61,14 +61,16 @@ function App() {
   const addToCart = (id) => {
     let newItems = cart.items;
     let found = false;
-    let newCount = cart.count + 1;
     let newTotal = cart.total;
+    // defaults to 1 if no input
+    let toAdd = +document.getElementById(id).value ? +document.getElementById(id).value : 1;
+    let newCount = cart.count + toAdd;
 
     for(const item of mens.items) {
       if(found) break;
       if(item.id === id) {
         newItems.push(item);
-        newTotal += item.cost;
+        newTotal += item.cost * toAdd;
         found = true;
       }
     }
@@ -77,7 +79,7 @@ function App() {
       if(found) break;
       if(item.id === id) {
         newItems.push(item);
-        newTotal += item.cost;
+        newTotal += item.cost * toAdd;
         found = true;
       }
     }
@@ -86,7 +88,7 @@ function App() {
       if(found) break;
       if(item.id === id) {
         newItems.push(item);
-        newTotal += item.cost;
+        newTotal += item.cost * toAdd;
         found = true;
       }
     }
