@@ -58,8 +58,16 @@ function App() {
     ]
   };
 
-  const sizeNotSelected = () => {
-    console.log('no size selected');
+  const sizeNotSelected = (id) => {
+    const message = document.querySelector('#itm' + id + ' > .sizes > .message');
+
+    message.textContent = 'Item not added to your cart. Please Select a size first.';
+  }
+
+  const sizeSelected = (id) => {
+    const message = document.querySelector('#itm' + id + ' > .sizes > .message');
+    
+    message.textContent = '';
   }
 
   const addToCart = (id) => {
@@ -77,15 +85,18 @@ function App() {
     }
 
     if(!checked) {
-      sizeNotSelected();
+      sizeNotSelected(id);
       return;
+    }
+    else {
+      sizeSelected(id);
     }
 
     let newItems = cart.items;
     let found = false;
     let newTotal = cart.total;
     // defaults to 1 if no input
-    let toAdd = +document.getElementById(id).value ? +document.getElementById(id).value : 1;
+    let toAdd = +document.getElementById('quantity'+id).value ? +document.getElementById('quantity'+id).value : 1;
     let newCount = cart.count + toAdd;
 
     for(const item of mens.items) {
@@ -118,9 +129,6 @@ function App() {
       }
     }
 
-    // test
-    console.log(newItems[newItems.length-1]);
-
     setCart(
       {
         total: newTotal,
@@ -136,9 +144,9 @@ function App() {
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} />
-          <Route path='/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} />} />
-          <Route path='/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} />} />
+          <Route path='/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} message='' />
+          <Route path='/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} message='' />} />
+          <Route path='/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} message='' />} />
         </Routes>
       </BrowserRouter>
     </>
