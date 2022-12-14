@@ -10,7 +10,7 @@ const ShopItem = ({details, message, addToCart}) => {
       <label>Please select a size:</label>
       {details.sizes.map((size, index) =>
         <div  key={size + details.id.toString()}>
-        <input type='radio' id={size} value={size} name='size' autoComplete='off' />
+        <input type='radio' id={size} value={size} name={'size' + details.id} autoComplete='off' />
         <label className='size' htmlFor={size}>{size}</label>
         </div>
       )}

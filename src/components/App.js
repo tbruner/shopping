@@ -80,7 +80,7 @@ function App() {
   }
 
   const addToCart = (id) => {
-    const sizes = document.getElementsByName('size');
+    const sizes = document.getElementsByName('size' + id);
     let checked = false;
     let size = null;
 
