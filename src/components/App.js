@@ -58,7 +58,29 @@ function App() {
     ]
   };
 
+  const sizeNotSelected = () => {
+    console.log('no size selected');
+  }
+
   const addToCart = (id) => {
+    const sizes = document.getElementsByName('size');
+    let checked = false;
+    let size = null;
+
+    for(let each of sizes) {
+      if(each.checked) 
+      {
+        checked = true;
+        size = each.value;
+        break;
+      }
+    }
+
+    if(!checked) {
+      sizeNotSelected();
+      return;
+    }
+
     let newItems = cart.items;
     let found = false;
     let newTotal = cart.total;
@@ -69,6 +91,7 @@ function App() {
     for(const item of mens.items) {
       if(found) break;
       if(item.id === id) {
+        item['size'] = size;
         newItems.push(item);
         newTotal += item.cost * toAdd;
         found = true;
@@ -78,6 +101,7 @@ function App() {
     for(const item of womens.items) {
       if(found) break;
       if(item.id === id) {
+        item['size'] = size;
         newItems.push(item);
         newTotal += item.cost * toAdd;
         found = true;
@@ -87,11 +111,15 @@ function App() {
     for(const item of kids.items) {
       if(found) break;
       if(item.id === id) {
+        item['size'] = size;
         newItems.push(item);
         newTotal += item.cost * toAdd;
         found = true;
       }
     }
+
+    // test
+    console.log(newItems[newItems.length-1]);
 
     setCart(
       {
