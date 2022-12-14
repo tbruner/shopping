@@ -24,6 +24,15 @@ function App() {
         alt: 'image of a shoe',
         id: 101,
         sizes: [8, 8.5, 9, 9.5, 10, 11, 12, 13]
+      },
+      {
+        shoeBrand: 'Vroom',
+        shoeName: 'Class',
+        cost: 89.99,
+        image: shoe,
+        alt: 'image of a shoe',
+        id: 102,
+        sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12, 13]
       }
     ]
   };
@@ -37,7 +46,7 @@ function App() {
         cost: 49.99,
         image: shoe,
         alt: 'image of a shoe',
-        id: 102,
+        id: 302,
         sizes: [6, 6.5, 7, 7.5, 8, 9, 10]
       }
     ]
