@@ -2,7 +2,7 @@ import '../styles/ShopItem.css';
 
 const ShopItem = ({details, message, addToCart}) => {
   return (
-    <div id={'itm' + details.id}>
+    <>
     <div className='item-title'>{details.shoeBrand} {details.shoeName}</div>
     <img src={details.image} alt={details.alt} className='item-image' />
     <div>{details.cost}</div>
@@ -19,7 +19,7 @@ const ShopItem = ({details, message, addToCart}) => {
     <label className='item-sub' htmlFor={'quantity' + details.id}>Quantity (between 1 and 10):</label>
     <input type='number' id={'quantity' + details.id} name='quantity' min={1} max={10} />
     <button className='add-to-cart' onClick={() => addToCart(details.id)}>Add To Cart</button>
-    </div>
+    </>
   );
 }
 
