@@ -4,20 +4,10 @@ import '../styles/Navigation.css';
 const Navigation = () => {
   return (
     <nav>
-      <ul>
-        <li className='nav-logo'>
-          <Link to='/'>Logo tbd</Link>
-        </li>
-        <li className='nav-mens'>
-          <Link to='/mens'>Mens</Link>
-        </li>
-        <li className='nav-womens'>
-          <Link to='/womens'>Womens</Link>
-        </li>
-        <li className='nav-kids'>
-          <Link to='/kids'>Kids</Link>
-        </li>
-      </ul>
+      <Link className='nav-link' to='/'>Logo tbd</Link>
+      <Link className='nav-link' to='/mens'>Mens</Link>
+      <Link className='nav-link' to='/womens'>Womens</Link>
+      <Link className='nav-link' to='/kids'>Kids</Link>
     </nav>
   );
 }
