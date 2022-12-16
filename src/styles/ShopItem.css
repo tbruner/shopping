@@ -6,3 +6,11 @@
 .item-image {
   width: 100%;
 }
+
+.sizes {
+  border: none;
+}
+
+.item-price {
+  color: hsl(12, 96%, 35%);
+}

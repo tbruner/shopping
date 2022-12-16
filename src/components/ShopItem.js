@@ -5,7 +5,7 @@ const ShopItem = ({details, message, addToCart}) => {
     <>
     <div className='item-title'>{details.shoeBrand} {details.shoeName}</div>
     <img src={details.image} alt={details.alt} className='item-image' />
-    <div>{details.cost}</div>
+    <div className='item-price'>${details.cost}</div>
     <fieldset className='sizes'>
       <label>Please select a size:</label>
       {details.sizes.map((size, index) =>
