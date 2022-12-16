@@ -9,7 +9,7 @@ const Shop = ({department, cart, addToCart, message}) => {
     <h1 className='shop-title'>Welcome to the {department.title} Shop!</h1>
     <div className='shop-items'>
       {department.items.map((item, index) =>
-      <div key={item.id} id={'itm' + item.id}>
+      <div key={item.id} className='item-card' id={'itm' + item.id}>
         <ShopItem details={item} addToCart={addToCart} message={message} />
       </div>
       )}

@@ -1,0 +1,15 @@
+.shop-title {
+  padding: 12px;
+}
+
+.shop-items {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+
+.item-card {
+  border: 7px solid black;
+}
