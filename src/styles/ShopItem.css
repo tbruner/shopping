@@ -1,6 +1,6 @@
 .item-title {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .item-image {
@@ -13,4 +13,17 @@
 
 .item-price {
   color: hsl(12, 96%, 35%);
+}
+
+.add-to-cart {
+  background-color: hsl(100, 87%, 61%);
+  border: none;
+  color: hsl(177, 94%, 19%);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.add-to-cart:hover {
+  cursor: pointer;
+  background-color: hsl(100, 77%, 71%);
 }
