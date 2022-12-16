@@ -11,5 +11,6 @@
 }
 
 .item-card {
-  border: 7px solid black;
+  display: flex;
+  flex-direction: column;
 }
