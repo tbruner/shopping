@@ -18,12 +18,14 @@
 .add-to-cart {
   background-color: hsl(100, 87%, 61%);
   border: none;
+  border-radius: 5px;
   color: hsl(177, 94%, 19%);
   font-weight: 600;
   font-size: 18px;
+  padding: 12px;
 }
 
 .add-to-cart:hover {
   cursor: pointer;
-  background-color: hsl(100, 77%, 71%);
+  background-color: hsl(100, 67%, 77%);
 }
