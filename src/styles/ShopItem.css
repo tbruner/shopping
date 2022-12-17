@@ -7,8 +7,14 @@
   width: 100%;
 }
 
-.sizes {
+.size-selection {
   border: none;
+}
+
+.sizes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .item-price {
@@ -28,4 +34,25 @@
 .add-to-cart:hover {
   cursor: pointer;
   background-color: hsl(100, 67%, 77%);
+}
+
+.size input[type='radio'] {
+
+}
+
+.size {
+  background-color: hsl(0, 0%, 94%);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.size:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 80%);
+}
+
+.sizes input[type="radio"]:checked + label {
+  border: 5px solid black;
+  background-color: aquamarine;
 }

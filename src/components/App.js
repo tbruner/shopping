@@ -68,13 +68,13 @@ function App() {
   };
 
   const sizeNotSelected = (id) => {
-    const message = document.querySelector('#itm' + id + ' > .sizes > .message');
+    const message = document.querySelector('#itm' + id + ' > .size-selection > .message');
 
     message.textContent = 'Item not added to your cart. Please Select a size first.';
   }
 
   const sizeSelected = (id) => {
-    const message = document.querySelector('#itm' + id + ' > .sizes > .message');
+    const message = document.querySelector('#itm' + id + ' > .size-selection > .message');
     
     message.textContent = '';
   }

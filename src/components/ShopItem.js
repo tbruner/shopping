@@ -6,14 +6,16 @@ const ShopItem = ({details, message, addToCart}) => {
     <div className='item-title'>{details.shoeBrand} {details.shoeName}</div>
     <img src={details.image} alt={details.alt} className='item-image' />
     <div className='item-price'>${details.cost}</div>
-    <fieldset className='sizes'>
+    <fieldset className='size-selection'>
       <label>Please select a size:</label>
-      {details.sizes.map((size, index) =>
-        <div  key={size + details.id.toString()}>
-        <input type='radio' id={size} value={size} name={'size' + details.id} autoComplete='off' />
-        <label className='size' htmlFor={size}>{size}</label>
-        </div>
-      )}
+      <div className='sizes'>
+        {details.sizes.map((size, index) =>
+          <label htmlFor={details.shoeName + size} className='size' key={size + details.id.toString()}>
+            {size}
+            <input type='radio' id={details.shoeName + size} value={size} name={'size' + details.id} />
+          </label>
+        )}
+      </div>
       <p className='message'>{message}</p>
     </fieldset>
     <label className='item-sub' htmlFor={'quantity' + details.id}>Quantity (between 1 and 10):</label>
