@@ -1,10 +1,33 @@
 .sticky {
-  overflow:hidden;
-  background-color:hsl(202, 89%, 33%); 
-  margin-bottom:50px;
-  width:100%; 
-  color:white; 
-  position:sticky;
-  position:-webkit-sticky;
-  top:0px;
+  overflow: hidden;
+  background-color: hsl(202, 89%, 33%); 
+  margin-bottom: 50px;
+  width: 100%; 
+  color: white; 
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 7px 0;
+}
+
+.sticky-bar-itm {
+  padding: 7px;
+}
+
+.checkout-btn {
+  margin-right: 20px;
+  background-color: hsl(100, 87%, 61%);
+  border: none;
+  color: hsl(177, 94%, 19%);
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.checkout-btn:hover {
+  cursor: pointer;
+  background-color: hsl(100, 67%, 77%);
 }
