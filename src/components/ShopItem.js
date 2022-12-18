@@ -3,7 +3,10 @@ import '../styles/ShopItem.css';
 const ShopItem = ({details, message, addToCart}) => {
   return (
     <>
-    <div className='item-title'>{details.shoeBrand} {details.shoeName}</div>
+    <div class='item-title'>
+      <div className='item-brand'>{details.shoeBrand}</div>
+      <div className='item-name'>{details.shoeName}</div>
+    </div>
     <img src={details.image} alt={details.alt} className='item-image' />
     <div className='item-price'>${details.cost}</div>
     <fieldset className='size-selection'>

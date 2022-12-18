@@ -1,6 +1,10 @@
-.item-title {
+.item-brand {
   font-weight: 600;
   font-size: 32px;
+}
+.item-name {
+  font-weight: 400px;
+  font-size: 24px;
 }
 
 .item-image {
