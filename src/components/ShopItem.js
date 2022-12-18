@@ -10,10 +10,12 @@ const ShopItem = ({details, message, addToCart}) => {
       <label>Please select a size:</label>
       <div className='sizes'>
         {details.sizes.map((size, index) =>
-          <label htmlFor={details.shoeName + size} className='size' key={size + details.id.toString()}>
-            {size}
+          <div key={size + details.id.toString()} className='size-container'>
             <input type='radio' id={details.shoeName + size} value={size} name={'size' + details.id} />
-          </label>
+            <label htmlFor={details.shoeName + size}  className='size'>
+              {size}
+            </label>
+          </div>
         )}
       </div>
       <p className='message'>{message}</p>
