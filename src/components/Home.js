@@ -19,7 +19,8 @@ const Home = () => {
         </div>
       </div>
       <footer>
-        Created by Trevor Bruner
+        <div class="credits">Created by Trevor Bruner</div>
+        <div class="credits">Images taken from Zappos.com</div>
       </footer>
     </div>
   );
