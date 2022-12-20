@@ -13,6 +13,8 @@ import onCloudGo1 from '../images/onCloudGo1.jpg';
 import adidasKidsRetroply from '../images/adidasKidsRetroply.jpg';
 import pumaRiftSlipOn from '../images/pumaRiftSlipOn.jpg';
 import saouconyKidsVelocer from '../images/saouconyKidsVelocer.jpg';
+import newBalance806v1 from '../images/newBalance806v1.jpg';
+import nikeReact from '../images/nikeReact.jpg';
 
 function App() {
   const [cart, setCart] = useState({
@@ -50,6 +52,24 @@ function App() {
         alt: 'pair of Brooks Revel 5 shoes',
         id: 10030,
         sizes: [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 13]
+      },
+      {
+        shoeBrand: 'New Balance',
+        shoeName: '806v1',
+        cost: 89.95,
+        image: newBalance806v1,
+        alt: 'pair of New Balance 806v1 shoes',
+        id: 10040,
+        sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12, 13]
+      },
+      {
+        shoeBrand: 'Nike',
+        shoeName: 'React',
+        cost: 149.99,
+        image: nikeReact,
+        alt: 'pair of Nike React shoes',
+        id: 10050,
+        sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12, 13]
       }
     ]
   };
