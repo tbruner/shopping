@@ -4,7 +4,15 @@ import Navigation from './Navigation';
 import Home from './Home';
 import Shop from './Shop';
 import '../styles/App.css';
-import shoe from '../images/shoe.jpg';
+import onCloudrunner from '../images/onCloudrunner.jpg';
+import adidasDame8 from '../images/adidasDame8.jpg';
+import brooksRevel5 from '../images/brooksRevel5.jpg';
+import adidasEdge4 from '../images/adidasEdge4.jpg';
+import brooksGhost14 from '../images/brooksGhost14.jpg';
+import onCloudGo1 from '../images/onCloudGo1.jpg';
+import adidasKidsRetroply from '../images/adidasKidsRetroply.jpg';
+import pumaRiftSlipOn from '../images/pumaRiftSlipOn.jpg';
+import saouconyKidsVelocer from '../images/saouconyKidsVelocer.jpg';
 
 function App() {
   const [cart, setCart] = useState({
@@ -17,22 +25,31 @@ function App() {
     title: 'Mens',
     items: [
       {
-        shoeBrand: 'Nice',
-        shoeName: 'Zoom',
+        shoeBrand: 'Adidas',
+        shoeName: 'Dame 8',
         cost: 49.99,
-        image: shoe,
-        alt: 'image of a shoe',
-        id: 101,
+        image: adidasDame8,
+        alt: 'pair of Adidas Dame 8 shoes',
+        id: 10010,
         sizes: [8, 8.5, 9, 9.5, 10, 11, 12, 13]
       },
       {
-        shoeBrand: 'Vroom',
-        shoeName: 'Class',
-        cost: 89.99,
-        image: shoe,
-        alt: 'image of a shoe',
-        id: 102,
+        shoeBrand: 'On',
+        shoeName: 'Cloudrunner',
+        cost: 139.95,
+        image: onCloudrunner,
+        alt: 'pair of On Cloudrunner shoes',
+        id: 10020,
         sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12, 13]
+      },
+      {
+        shoeBrand: 'Brooks',
+        shoeName: 'Revel 5',
+        cost: 129.95,
+        image: brooksRevel5,
+        alt: 'pair of Brooks Revel 5 shoes',
+        id: 10030,
+        sizes: [7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 13]
       }
     ]
   };
@@ -41,13 +58,31 @@ function App() {
     title: 'Womens',
     items: [
       {
-        shoeBrand: 'Nice',
-        shoeName: 'Zooma',
-        cost: 49.99,
-        image: shoe,
+        shoeBrand: 'Adidas',
+        shoeName: 'Edge 4',
+        cost: 59.99,
+        image: adidasEdge4,
         alt: 'image of a shoe',
-        id: 302,
+        id: 20010,
         sizes: [6, 6.5, 7, 7.5, 8, 9, 10]
+      },
+      {
+        shoeBrand: 'Brooks',
+        shoeName: 'Ghost 14',
+        cost: 119.95,
+        image: brooksGhost14,
+        alt: 'pair of Brooks Ghost 14 shoes',
+        id: 20020,
+        sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
+      },
+      {
+        shoeBrand: 'On', 
+        shoeName: 'Cloudgo 1', 
+        cost: 139.95,
+        image: onCloudGo1,
+        alt: 'pair of On Cloudgo 1 shoes',
+        id: 20030,
+        sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
       }
     ]
   };
@@ -56,13 +91,31 @@ function App() {
     title: 'Kids',
     items: [
       {
-        shoeBrand: 'Nice',
-        shoeName: 'Zoomy',
-        cost: 19.99,
-        image: shoe,
-        alt: 'image of a shoe',
-        id: 201,
+        shoeBrand: 'Adidas Kids',
+        shoeName: 'Retroply',
+        cost: 39.95,
+        image: adidasKidsRetroply,
+        alt: 'pair of Adidas Kids Retroply shoes',
+        id: 30010,
         sizes: [4, 5, 6, 7]
+      },
+      {
+        shoeBrand: 'Puma',
+        shoeName: 'Rift Slip-On',
+        cost: 49.99,
+        image: pumaRiftSlipOn,
+        alt: 'A Puma Rift Slip-On shoe',
+        id: 30020,
+        sizes: [13, 1, 2, 3, 4, 5]
+      },
+      {
+        shoeBrand: 'Saoucony Kids',
+        shoeName: 'Velocer',
+        cost: 49.95,
+        image: saouconyKidsVelocer,
+        alt: 'pair of Saoucony Kids Velocer shoes',
+        id: 30030,
+        sizes: [13, 1, 2, 3, 4, 5, 6]
       }
     ]
   };
