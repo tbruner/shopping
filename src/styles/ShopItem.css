@@ -1,3 +1,9 @@
+.item-main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .item-brand {
   font-weight: 600;
   font-size: 32px;

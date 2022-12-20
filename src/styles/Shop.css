@@ -19,6 +19,7 @@
 .item-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
   background-color: hsl(0, 0%, 95%);
   padding: 12px;
