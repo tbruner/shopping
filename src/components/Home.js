@@ -19,8 +19,8 @@ const Home = () => {
         </div>
       </div>
       <footer>
-        <div class="credits">Created by Trevor Bruner</div>
-        <div class="credits">Images taken from Zappos.com</div>
+        <div className="credits">Created by Trevor Bruner</div>
+        <div className="credits">Images taken from Zappos.com</div>
       </footer>
     </div>
   );
