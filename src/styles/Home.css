@@ -13,7 +13,23 @@
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
+  gap: 12px;
   width: 100%;
+}
+
+.item-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-promo > img {
+  width: 100%;
+}
+
+.promo-brand {
+  font-weight: 400;
+  font-size: 16px;
 }
 
 footer {
