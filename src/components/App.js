@@ -15,6 +15,9 @@ import pumaRiftSlipOn from '../images/pumaRiftSlipOn.jpg';
 import saouconyKidsVelocer from '../images/saouconyKidsVelocer.jpg';
 import newBalance806v1 from '../images/newBalance806v1.jpg';
 import nikeReact from '../images/nikeReact.jpg';
+import underArmourChargedBandit from '../images/underArmourChargedBandit.jpg';
+import uggClassic from '../images/uggClassic.jpg';
+import sperryMocSider from '../images/sperryMocSider.jpg';
 
 function App() {
   const [cart, setCart] = useState({
@@ -22,6 +25,45 @@ function App() {
     count: 0,
     items: []
   });
+
+  const promotion = [
+    {
+      shoeBrand: 'Nike',
+      shoeName: 'React',
+      cost: 149.99,
+      image: nikeReact,
+      alt: 'pair of Nike React shoes',
+      id: 10050,
+      sizes: [8.5, 9, 9.5, 10, 10.5, 11, 12, 13]
+    },
+    {
+      shoeBrand: 'Under Armour',
+      shoeName: 'Charged Bandit',
+      cost: 69.95,
+      image: underArmourChargedBandit,
+      alt: 'pair of Under Armour Charged Bandit shoes',
+      id: 20040,
+      sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
+    },
+    {
+      shoeBrand: 'Sperry',
+      shoeName: 'Moc-Sider',
+      cost: 70.00,
+      image: sperryMocSider,
+      alt: 'pair of Sperry Moc-Sider shoes',
+      id: 20050,
+      sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
+    },
+    {
+      shoeBrand: 'UGG',
+      shoeName: 'Classic',
+      cost: 170.00,
+      image: uggClassic,
+      alt: 'pair of womens UGG classic',
+      id: 20060,
+      sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
+    }
+  ];
 
   const mens = {
     title: 'Mens',
@@ -102,6 +144,33 @@ function App() {
         image: onCloudGo1,
         alt: 'pair of On Cloudgo 1 shoes',
         id: 20030,
+        sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
+      },
+      {
+        shoeBrand: 'Under Armour',
+        shoeName: 'Charged Bandit',
+        cost: 69.95,
+        image: underArmourChargedBandit,
+        alt: 'pair of Under Armour Charged Bandit shoes',
+        id: 20040,
+        sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
+      },
+      {
+        shoeBrand: 'Sperry',
+        shoeName: 'Moc-Sider',
+        cost: 70.00,
+        image: sperryMocSider,
+        alt: 'pair of Sperry Moc-Sider shoes',
+        id: 20050,
+        sizes: [6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
+      },
+      {
+        shoeBrand: 'UGG',
+        shoeName: 'Classic',
+        cost: 170.00,
+        image: uggClassic,
+        alt: 'pair of womens UGG classic',
+        id: 20060,
         sizes: [6.5, 7, 7.5, 8, 8.5, 9, 9.5]
       }
     ]
@@ -225,7 +294,7 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home promotion={promotion} />} />
           <Route path='/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} message='' />
           <Route path='/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} message='' />} />
           <Route path='/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} message='' />} />

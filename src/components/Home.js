@@ -1,22 +1,16 @@
 import '../styles/Home.css';
 
-const Home = () => {
+const Home = ({ promotion }) => {
   return (
     <div className='home'>
       <h1>Browse our "wild" selection of shoes!</h1>
       <div className='home-promo'>
-        <div className='item-promo'>
-          Nike
-        </div>
-        <div className='item-promo'>
-          Under Armor
-        </div>
-        <div className='item-promo'>
-          UGG
-        </div>
-        <div className='item-promo'>
-          Sperry
-        </div>
+        {promotion.map((item) =>
+          <div className='item-promo' key={item.id + 'promo'}>
+            <img src={item.image} alt={item.alt} />
+            <div className='promo-brand'>{item.shoeBrand}</div>
+          </div>
+        )}
       </div>
       <footer>
         <div className="credits">Created by Trevor Bruner</div>
