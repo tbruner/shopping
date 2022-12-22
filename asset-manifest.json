@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/shopping/static/css/main.aa4a7b20.css",
+    "main.js": "/shopping/static/js/main.5972188c.js",
+    "static/media/uggClassic.jpg": "/shopping/static/media/uggClassic.62ea8af2dd31bc951f32.jpg",
+    "static/media/brooksGhost14.jpg": "/shopping/static/media/brooksGhost14.7887926cb7be7ac740e0.jpg",
+    "static/media/brooksRevel5.jpg": "/shopping/static/media/brooksRevel5.1a10a85fe9724ceba96f.jpg",
+    "static/media/nikeReact.jpg": "/shopping/static/media/nikeReact.5a9cdd0840b013142e06.jpg",
+    "static/media/saouconyKidsVelocer.jpg": "/shopping/static/media/saouconyKidsVelocer.3dd0ad2a0709f32eb14d.jpg",
+    "static/media/underArmourChargedBandit.jpg": "/shopping/static/media/underArmourChargedBandit.5f33fee227dc551b9833.jpg",
+    "static/media/onCloudrunner.jpg": "/shopping/static/media/onCloudrunner.84bd51689e9adfbf7996.jpg",
+    "static/media/newBalance806v1.jpg": "/shopping/static/media/newBalance806v1.505235f6f90099932351.jpg",
+    "static/media/adidasDame8.jpg": "/shopping/static/media/adidasDame8.8fcfb022af86b6017cf4.jpg",
+    "static/media/onCloudGo1.jpg": "/shopping/static/media/onCloudGo1.fd1f25504a889335a137.jpg",
+    "static/media/adidasKidsRetroply.jpg": "/shopping/static/media/adidasKidsRetroply.75e9304a9b7e14e4d4e7.jpg",
+    "static/media/sperryMocSider.jpg": "/shopping/static/media/sperryMocSider.333726164c48a2c40c2f.jpg",
+    "static/media/adidasEdge4.jpg": "/shopping/static/media/adidasEdge4.f2ecc46ce2cb7673e0bf.jpg",
+    "static/media/pumaRiftSlipOn.jpg": "/shopping/static/media/pumaRiftSlipOn.a5480153efb43e284022.jpg",
+    "static/media/shoeZooLogo.svg": "/shopping/static/media/shoeZooLogo.a3eff1c535093960aa0113202a81f1e8.svg",
+    "index.html": "/shopping/index.html",
+    "main.aa4a7b20.css.map": "/shopping/static/css/main.aa4a7b20.css.map",
+    "main.5972188c.js.map": "/shopping/static/js/main.5972188c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa4a7b20.css",
+    "static/js/main.5972188c.js"
+  ]
+}
