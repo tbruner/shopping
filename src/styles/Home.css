@@ -37,3 +37,18 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: hsl(200, 80%, 40%);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color:hsl(200, 80%, 20%)
+}
