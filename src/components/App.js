@@ -212,7 +212,7 @@ function App() {
   const sizeNotSelected = (id) => {
     const message = document.querySelector('#itm' + id + ' > .item-main > .size-selection > .message');
 
-    message.textContent = 'Item not added to your cart. Please Select a size first.';
+    message.textContent = 'Item not added to your cart. Please select a size first.';
   }
 
   const sizeSelected = (id) => {
