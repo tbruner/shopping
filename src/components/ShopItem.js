@@ -9,7 +9,7 @@ const ShopItem = ({details, message, addToCart}) => {
         <div className='item-name'>{details.shoeName}</div>
       </div>
       <img src={details.image} alt={details.alt} className='item-image' />
-      <div className='item-price'>${details.cost}</div>
+      <div className='item-price'>${details.cost.toFixed(2)}</div>
       <fieldset className='size-selection'>
         <label>Please select a size:</label>
         <div className='sizes'>
