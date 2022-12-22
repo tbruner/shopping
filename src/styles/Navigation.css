@@ -16,3 +16,11 @@ nav {
   text-decoration: underline;
   color: hsl(203, 100%, 80%);
 }
+
+.logo {
+  height: 42px;
+}
+
+.logo:hover {
+  opacity: 70%;
+}
