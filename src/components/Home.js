@@ -14,6 +14,10 @@ const Home = ({ promotion }) => {
       </div>
       <footer>
         <div className="credits">Created by Trevor Bruner</div>
+        <div className='footer-links'>
+          <a href='https://github.com/tbruner' target='_blank' rel='noreferrer'>GitHub</a> 
+          <a href='https://www.linkedin.com/in/trevorabruner/' target='_blank' rel='noreferrer'>LinkedIn</a>
+        </div>
         <div className="credits">Images taken from Zappos.com</div>
       </footer>
     </div>
