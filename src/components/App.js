@@ -294,10 +294,10 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path='/' element={<Home promotion={promotion} />} />
-          <Route path='/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} message='' />
-          <Route path='/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} message='' />} />
-          <Route path='/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} message='' />} />
+          <Route path='/shopping' element={<Home promotion={promotion} />} />
+          <Route path='/shopping/mens' element={<Shop department={mens} cart={cart} addToCart={addToCart} />} message='' />
+          <Route path='/shopping/womens' element={<Shop department={womens} cart={cart} addToCart={addToCart} message='' />} />
+          <Route path='/shopping/kids' element={<Shop department={kids} cart={cart} addToCart={addToCart} message='' />} />
         </Routes>
       </BrowserRouter>
     </>
