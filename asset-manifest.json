@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping/static/css/main.aa4a7b20.css",
-    "main.js": "/shopping/static/js/main.5972188c.js",
+    "main.js": "/shopping/static/js/main.0d8061a7.js",
     "static/media/uggClassic.jpg": "/shopping/static/media/uggClassic.62ea8af2dd31bc951f32.jpg",
     "static/media/brooksGhost14.jpg": "/shopping/static/media/brooksGhost14.7887926cb7be7ac740e0.jpg",
     "static/media/brooksRevel5.jpg": "/shopping/static/media/brooksRevel5.1a10a85fe9724ceba96f.jpg",
@@ -19,10 +19,10 @@
     "static/media/shoeZooLogo.svg": "/shopping/static/media/shoeZooLogo.a3eff1c535093960aa0113202a81f1e8.svg",
     "index.html": "/shopping/index.html",
     "main.aa4a7b20.css.map": "/shopping/static/css/main.aa4a7b20.css.map",
-    "main.5972188c.js.map": "/shopping/static/js/main.5972188c.js.map"
+    "main.0d8061a7.js.map": "/shopping/static/js/main.0d8061a7.js.map"
   },
   "entrypoints": [
     "static/css/main.aa4a7b20.css",
-    "static/js/main.5972188c.js"
+    "static/js/main.0d8061a7.js"
   ]
 }
